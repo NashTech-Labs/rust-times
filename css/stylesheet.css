@@ -1,0 +1,481 @@
+/*====================================
+ Defult Theme
+-------------------------------------
+Fonts:Poppins
+====================================*/
+
+
+/*====================================
+ Navigation
+====================================*/
+
+
+
+
+
+/*====================================
+ Home
+====================================*/
+body {
+	position: relative;
+	font-family: Poppins;
+	padding-top: 76px;
+}
+
+#home-content {
+	background: url("../images/bannerBg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0px;
+}
+
+
+#home-content h3 {
+	font-size: 28px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 38px;
+    border-left: 3px solid #e44d26;
+    padding-left: 10px;
+    font-family: 'Poppins';
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#home-content h3 span {
+	color: #e44d26;
+
+}
+
+.home-banner {
+	padding: 0px;
+}
+
+
+.bottom-content {
+	background-color: #01070a;
+	padding: 12px 0px
+}
+
+
+.bottom-content h2 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 0px;
+	font-family: 'Poppins';
+}
+
+
+
+/*====================================
+ rusttimes-content
+====================================*/
+
+
+#rusttimes-content {
+	padding-top: 30px;
+}
+
+.articles h6 {
+	font-size: 32px;
+	color: #e44d26;
+	padding-left: 20px;
+	font-family: 'Poppins';
+	margin-top: 20px;
+
+}
+
+.articles-content {
+	border: 1px solid #e5e5e5;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.articles-content:hover {
+	background-color: white;
+    border: 1px solid #ffffff;
+    box-shadow: 1px 1px 10px 0 #dcdcdc;
+}
+
+.articles-content h6 {
+	font-size: 22px;
+    color: #0f2027;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin-bottom: 12px;
+
+}
+
+
+.articles-content p {
+	font-size: 16px;
+	color: #747b85;
+	font-family: 'Poppins';
+	line-height: 24px;
+	font-weight: 400;
+}
+
+
+.auther-name {
+	display: inline-block;
+	color: #909496;
+	font-size: 15px;
+	font-weight: 400;
+	padding-right: 26px;
+	padding: 0 20px 0 0;
+	line-height: 31px;
+	vertical-align: top;
+	font-family: 'Poppins';
+
+}
+
+.auther-user {
+	display: inline-block;
+	color: #909496;
+	font-size: 20px;
+	width: 24px;
+}
+
+.icon-left {
+	border-right: 1px solid #e5e5e5;
+	display: inline-block;
+}
+
+
+.icon-right {
+	display: inline;
+	padding-left: 18px;
+}
+
+
+.date {
+	display: inline-block;
+	color: #909496;
+	font-size: 15px;
+	font-weight: 400;
+	padding-right: 26px;
+	padding: 0 20px 0 0;
+	line-height: 31px;
+	vertical-align: top;
+	font-family: 'Poppins';
+
+
+}
+
+.auther-date {
+	display: inline-block;
+	color: #909496;
+	font-size: 20px;
+	width: 24px;
+}
+
+
+.articles-readmore {
+	padding-top: 20px;
+}
+
+.article-bttn-share .read-bttn {
+	background-color: #e44d26;
+	border: 1px solid #e44d26;
+	font-size: 15px;
+    font-weight: 500;
+    padding: 8px 12px;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+
+.article-bttn-share .read-bttn:hover {
+	background-color: #0f2027;
+	border: 1px solid #0f2027;
+	transform: translateY(-5px);
+
+}
+
+
+
+.share-articles {
+	float: right;
+	padding-right: 9px;
+}
+
+.share-articles-heading h6 {
+    font-size: 14px;
+    color: #909496;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.share-articles-icon {
+	display: inline-block;
+}
+
+.share-icon {
+	display: inline-block;
+}
+
+.share-icon a {
+    padding: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    margin: 0 4px 0 0;
+    color: #7f7f7f;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.share-icon a:hover {
+		transform: translateY(-2px);
+}
+
+
+.share-icon i.fa {
+    font-size: 13px;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #7f7f7f;
+    border-radius: 15px;
+    padding-top: 4px;
+}
+
+.share-articles-icon ul {
+	padding: 0px;
+	margin: 0px;
+
+}
+
+.share-icon a:hover .fa-linkedin {
+	border: 2px solid #0077B5;
+	background-color: #0077B5;
+	color: #fff
+}
+
+
+
+.share-icon a:hover .fa-facebook {
+	border: 2px solid #3b5998;
+	background-color: #3b5998;
+	color: #fff
+
+}
+
+.share-icon a:hover .fa-twitter {
+	border: 2px solid #00acee;
+	background-color: #00acee;
+	color: #fff
+
+}
+
+.articles-content-1 {
+    margin: 0 15px;
+}
+
+
+.articles-content-1 h6 {
+	font-size: 22px;
+    color: #0f2027;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin-bottom: 12px;
+
+}
+
+
+.articles-readmore-1 {
+	padding-top: 0px;
+}
+
+footer{background-color: #01070a;
+	padding: 20px 0px;}
+	
+.footer-txt{ color: #fff; font-size: 18px; text-align: center}
+
+/*====================================
+ nav
+====================================*/
+
+
+
+.rust-nav-wrapper {
+    background-color: #fff;
+        padding: 0 80px;
+    border-bottom: 2px solid #e44d26;
+}
+
+.rust-logo {
+    width: 240px;
+}
+
+.rust-logo img {
+
+    padding:0;
+    max-width: 100%;
+
+}
+
+.rust-nav {
+	border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    margin: 0 auto;
+    /* width: calc(100% - 500px); */
+    box-sizing: border-box;
+	padding: 30px 20px;
+}
+
+.rust-nav li {
+    display: inline-block;
+     border-right: 1px solid #e5e5e5;
+}
+
+.rust-nav li:last-child{
+    border-right: none;
+    
+}
+
+
+.rust-nav li a {
+    text-decoration: none;
+    background-color: transparent;
+    padding:0 20px !important;
+    font-size: 16px;
+    color: #0f2027 !important;
+    font-weight: 400;
+	font-family: 'Poppins';
+	line-height: 18px
+}
+.rust-nav li a:hover, 
+.rust-nav li a.active{
+     color: #e44d26  !important;
+}
+
+
+#articles::before, #events::before, #jobs::before, 
+#releases::before {
+    display: block;
+    height: 6rem;
+    margin-top: -6rem;
+    visibility: hidden;
+    content: "";
+}
+
+.rust-search {
+    padding-top: 10px;
+    margin-left: 20px;
+}
+.rust-search input.form-control {
+    padding: 6px 10px;
+    height: 44px;
+    border-radius: 8px;
+    width: calc(100% - 140px);
+    font-size: 13px;
+}
+
+.rust-search .btn {
+    background-color: #e44d26;
+    border: 1px solid #e44d26;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: #fff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+
+.rust-search .btn:hover{
+    background-color: #0f2027;
+    border: 1px solid #0f2027;
+    transform: translateY(-5px);
+    color:#fff;
+
+}
+
+.promote-block {
+    background: #f9f9f9;
+    margin-top: 68px;
+    padding: 20px 20px;
+}
+
+.promote-block .info-heading{border:1px solid #ececec; padding: 15px; margin:30px 0; font-size: 16px; font-weight: 500}
+.promote-block .archive-select-box { margin:30px 0;}
+.promote-block .archive-select-box h2{ font-size: 16px; color: #444;} 
+.promote-block .archive-select-box select {
+    padding: 6px 20px 6px 10px;
+    border-radius: 3px;
+    height: 48px;
+    color: #888;
+    font-size: 14px;
+}
+
+.promote-block .suggestion-box { margin:30px 0;}
+.promote-block .suggestion-box h2{ font-size: 16px; color: #444;} 
+.promote-block .suggestion-box p{ font-size: 14px; color: #747b85; line-height: 24px;  font-weight: 400; margin-bottom: 10px;} 
+.promote-block .suggestion-box .submit-btn {
+    background-color: #90908e;
+    border: 1px solid #90908e;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 20px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #1c3037;
+ }
+
+.footer-logo {
+    width: 100px;
+    margin: 0 5px;
+}
+
+@media (max-width: 1200px){
+.rust-nav {
+ 	padding: 30px 20px;
+	margin: 0 30px;
+}
+}
+
+@media (max-width: 992px){
+
+	body {
+		padding-top: 60px;
+	}
+
+	.rust-logo {
+		width: 220px;
+		padding: 10px 0;
+	}
+	.rust-nav {
+		border: 0;
+		border-top: 1px solid #e5e5e5;
+		border-left: 0;
+		margin: 0;
+		box-sizing: border-box;
+		padding:0;
+		width: 100%;
+	}
+
+	.rust-nav li {
+		display: block;
+		border: 0;
+		border-bottom: 1px solid #eee;
+	}
+	
+	.rust-nav li a {
+		padding: 10px !important;
+		}
+
+		.rust-search {
+			padding: 10px;
+		}
+}
