@@ -101,20 +101,20 @@ body {
 }
 
 .articles-content h6 {
-	font-size: 22px;
+	font-size: 20px;
     color: #0f2027;
     font-weight: 500;
     font-family: 'Poppins';
-    margin-bottom: 12px;
-
+    margin-bottom: 16px;
+	width: 100%;
 }
 
 
 .articles-content p {
-	font-size: 16px;
+	font-size: 15px;
 	color: #747b85;
 	font-family: 'Poppins';
-	line-height: 24px;
+	line-height: 22px;
 	font-weight: 400;
 }
 
@@ -200,6 +200,7 @@ body {
 .share-articles {
 	float: right;
 	padding-right: 9px;
+	display: none
 }
 
 .share-articles-heading h6 {
@@ -274,15 +275,16 @@ body {
 
 .articles-content-1 {
     margin: 0 15px;
+    display: block;
+    width: 100%;    
 }
 
-
 .articles-content-1 h6 {
-	font-size: 22px;
+	font-size: 20px;
     color: #0f2027;
     font-weight: 500;
     font-family: 'Poppins';
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 
 }
 
@@ -291,8 +293,9 @@ body {
 	padding-top: 0px;
 }
 
-footer{background-color: #01070a;
-	padding: 20px 0px;}
+footer {background-color: #01070a; padding: 20px 0px;}
+
+.article-bttn-share {margin-top: 10px;}
 	
 .footer-txt{ color: #fff; font-size: 18px; text-align: center}
 
@@ -431,10 +434,11 @@ footer{background-color: #01070a;
 	display: inline-block
 }
 
-.submit-btn:hover{
+.promote-block .suggestion-box .submit-btn:hover {
     transform: translateY(-4px);
+	background-color: #0e2128 ;
+	border: 1px solid #0e2128;
 }
-
 .navbar-toggler {
     background-color: #1c3037;
  }
@@ -442,6 +446,12 @@ footer{background-color: #01070a;
 .footer-logo {
     width: 100px;
     margin: 0 5px;
+}
+
+.form-control:focus {
+    border-color: #ffa38c;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(228, 76, 38, 0.13);
 }
 
 @media (max-width: 1200px){
