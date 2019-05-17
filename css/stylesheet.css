@@ -22,6 +22,8 @@ body {
 	padding-top: 76px;
 }
 
+a{ cursor: pointer; }
+
 #home-content {
 	background: url("../images/bannerBg.jpg");
 	background-repeat: no-repeat;
@@ -293,6 +295,9 @@ body {
 	padding-top: 0px;
 }
 
+
+.sticky {position: -webkit-sticky;  position: sticky;  top: 100px;}
+
 footer {background-color: #01070a; padding: 20px 0px;}
 
 .article-bttn-share {margin-top: 10px;}
@@ -494,4 +499,18 @@ footer {background-color: #01070a; padding: 20px 0px;}
 		.rust-search {
 			padding: 10px;
 		}
+
+		.promote-block {
+    margin-top: 10px
+}
+
+	.sticky {
+    position: -webkit-relative;
+    position: relative;
+    top: 0;
+}
+
+.promote-block .info-heading {
+    margin: 10px 0;}
+
 }
