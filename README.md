@@ -14,8 +14,8 @@ No problem!
 
 In exchange, we would just ask you to either:
 
-1. Add the Rust Times logo (hyperlink- http://rusttimes.com/images/logo.png) in the Media Partners section on the event’s web page and link it to rusttimes.com,
-2. Send us ( hyperlink - mailto:rusttimes@knoldus.com) a discount code for tickets for Rust Times subscribers and a link to your event,
+1. Add the [Rust Times logo](http://rusttimes.com/images/logo.png) in the Media Partners section on the event’s web page and link it to rusttimes.com,
+2. [Send us](mailto:rusttimes@knoldus.com) a discount code for tickets for Rust Times subscribers and a link to your event,
 3. or Both!
 Once we get your e-mail, the information about your event and the discount code will be sent to the Rust Times subscribers in the next newsletter.
 
