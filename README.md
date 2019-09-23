@@ -2,7 +2,7 @@
 
 Rust Times is a bi-weekly newsletter which gives you an overview of the most popular Rust articles, jobs, events, and news.
 
-Stay updated with the latest rust insights and news by subscribing the newsletter : https://bit.ly/2Hxp79i
+Stay updated with the latest rust insights and news by subscribing the newsletter : https://share.hsforms.com/18UU5CNKVT-iPaN8ZSmquMQ2u6gi
 
 
 # Promote your event with us!
