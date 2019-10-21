@@ -278,7 +278,7 @@ a{ cursor: pointer; }
 .articles-content-1 {
     margin: 0 15px;
     display: block;
-    width: 100%;    
+    width: 100%;
 }
 
 .articles-content-1 h6 {
@@ -301,7 +301,7 @@ a{ cursor: pointer; }
 footer {background-color: #01070a; padding: 20px 0px;}
 
 .article-bttn-share {margin-top: 10px;}
-	
+
 .footer-txt{ color: #fff; font-size: 18px; text-align: center}
 
 /*====================================
@@ -343,7 +343,7 @@ footer {background-color: #01070a; padding: 20px 0px;}
 
 .rust-nav li:last-child{
     border-right: none;
-    
+
 }
 
 
@@ -357,14 +357,14 @@ footer {background-color: #01070a; padding: 20px 0px;}
 	font-family: 'Poppins';
 	line-height: 18px
 }
-.rust-nav li a:hover, 
+.rust-nav li a:hover,
 .rust-nav li a.active{
      color: #e44d26  !important;
 }
 
 
-#articles::before, #events::before, #jobs::before, 
-#releases::before {
+#articles::before, #events::before, #jobs::before,
+#releases::before, #templates::before {
     display: block;
     height: 6rem;
     margin-top: -6rem;
@@ -419,7 +419,7 @@ footer {background-color: #01070a; padding: 20px 0px;}
 
 
 .promote-block .archive-select-box { margin:30px 0;}
-.promote-block .archive-select-box h2{ font-size: 16px; color: #444;} 
+.promote-block .archive-select-box h2{ font-size: 16px; color: #444;}
 .promote-block .archive-select-box select {
     padding: 6px 20px 6px 10px;
     border-radius: 3px;
@@ -429,8 +429,8 @@ footer {background-color: #01070a; padding: 20px 0px;}
 }
 
 .promote-block .suggestion-box { margin:30px 0;}
-.promote-block .suggestion-box h2{ font-size: 16px; color: #444;} 
-.promote-block .suggestion-box p{ font-size: 14px; color: #747b85; line-height: 24px;  font-weight: 400; margin-bottom: 10px;} 
+.promote-block .suggestion-box h2{ font-size: 16px; color: #444;}
+.promote-block .suggestion-box p{ font-size: 14px; color: #747b85; line-height: 24px;  font-weight: 400; margin-bottom: 10px;}
 .promote-block .suggestion-box .submit-btn {
     background-color: #90908e;
     border: 1px solid #90908e;
@@ -497,7 +497,7 @@ footer {background-color: #01070a; padding: 20px 0px;}
 		border: 0;
 		border-bottom: 1px solid #eee;
 	}
-	
+
 	.rust-nav li a {
 		padding: 10px !important;
 		}
