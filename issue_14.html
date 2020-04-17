@@ -1,1291 +1,1393 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Rust Times: Bi-weekly newsletter of Rust article, jobs, events & releases.</title>
-  <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scle=1">
+    <title>Rust Times: Bi-weekly newsletter of Rust article, jobs, events & releases.</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scle=1">
 
-  <meta name="description"  content="Subscribe Rust times to keep yourself updated with the latest Rust articles, jobs, events, and news">
-	<meta name="keywords"  content="Rust programming language, rust newsletter, rust, newspaper">
+    <meta name="description"
+          content="Subscribe Rust times to keep yourself updated with the latest Rust articles, jobs, events, and news">
+    <meta name="keywords" content="Rust programming language, rust newsletter, rust, newspaper">
 
-  <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
-	<!--Google Font-->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,400,500,600,700,900" rel="stylesheet">
-  	<!--fontawesome-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--Bootstrap Css-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">	<!--Custom Css-->
-   <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,400,500,600,700,900" rel="stylesheet">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="css/stylesheet.css">
 
 </head>
 <body data-spy="scroll" data-target="#navbar-rust">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light navbar-dark  fixed-top" style="background: #ffffff21;box-shadow: 0 1px 4px #00000021;padding: 0 1rem;">
-            <a href="index.html" class="rust-logo">
-                <img src="images/logo.png" alt="logo" class="img-responsive">
-            </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<header>
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark  fixed-top"
+         style="background: #ffffff21;box-shadow: 0 1px 4px #00000021;padding: 0 1rem;">
+        <a href="index.html" class="rust-logo">
+            <img src="images/logo.png" alt="logo" class="img-responsive">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="rust-nav navbar-nav mr-auto" id="navbar-rust">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#articles">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#events">Events</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#jobs">Jobs</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#releases">Releases</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#templates">Templates/XLR8RS</a>
-                    </li>
-                  </ul>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="rust-nav navbar-nav mr-auto" id="navbar-rust">
+                <li class="nav-item">
+                    <a class="nav-link" href="#articles">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jobs">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#releases">Releases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#templates">Templates/XLR8RS</a>
+                </li>
+            </ul>
 
 
             <div class="rust-search">
-               <button class="btn btn-success my-2 my-sm-0" type="submit"  onClick="window.open('https://share.hsforms.com/18UU5CNKVT-iPaN8ZSmquMQ2u6gi','_blank')">Subscribe Rust Times</button>
-           </div>
-          </div>
-        </nav>
-      </header>
+                <button class="btn btn-success my-2 my-sm-0" type="submit"
+                        onClick="window.open('https://share.hsforms.com/18UU5CNKVT-iPaN8ZSmquMQ2u6gi','_blank')">
+                    Subscribe Rust Times
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
 
-  <section id="home">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="home-banner col-md-12">
-					<div id="home-content">
-						<h3>Your bi-weekly overview of the most popular <br>
-							<span>Rust</span> articles, jobs, events, and news</h3>
-					</div>
-					<div class="bottom-content text-center">
-						<h2>15 November 2019, ISSUE #14</h2>
-					</div>
-				</div>
+<section id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="home-banner col-md-12">
+                <div id="home-content">
+                    <h3>Your bi-weekly overview of the most popular <br>
+                        <span>Rust</span> articles, jobs, events, and news</h3>
+                </div>
+                <div class="bottom-content text-center">
+                    <h2>15 November 2019, ISSUE #14</h2>
+                </div>
+            </div>
 
 
-			</div>
-		</div>
+        </div>
+    </div>
 </section>
 
 
 <div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-md-8">
-        <div data-spy="scroll" data-target="#navbar-rust" data-offset="0">
+    <div class="row">
+        <div class="col-md-8">
+            <div data-spy="scroll" data-target="#navbar-rust" data-offset="0">
 
-        <!-- Articles block-->
-        <div  id="articles">
-            <div class="articles">
-                <h6>Articles</h6>
-              </div>
-
-	    <!-- article content start-->
-            <div class="articles-content">
-                <h6>Closer Scrutiny of Rust Collections [Part-2]</h6>
-                <p>Learn the concept of different map collections in Rust
-                  Programming Language like HashMap and BTreeMap. </p>
-                <!---Author-Date-->
-                <div class="author-date">
-                    <div class="icon-left">
-                        <div class="auther-user">
-                            <i class="fa fa-user-circle-o"></i>
-                        </div>
-                        <div class="auther-name">
-                            Pankaj Chaudhary
-                        </div>
+                <!-- Articles block-->
+                <div id="articles">
+                    <div class="articles">
+                        <h6>Articles</h6>
                     </div>
 
-
-                    <div class="icon-right">
-                        <div class="auther-date">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <div class="date">
-                            14 November 2019
-                        </div>
-                    </div>
-
-                </div>
-                <!---End of Author-Date-->
-
-
-                <!---Bttn and share-->
-                <div class="articles-readmore">
-                    <div class="row">
-                        <div class="read-more col-md-6">
-                            <div class="article-bttn-share">
-                                <a href="https://blog.knoldus.com/closer-scrutiny-of-rust-collections-part-2/"  target="_blank"  class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="share-articles">
-                                <div class="share-articles-heading">
-                                    <h6>Share Article</h6>
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>Closer Scrutiny of Rust Collections [Part-2]</h6>
+                        <p>Learn the concept of different map collections in Rust
+                            Programming Language like HashMap and BTreeMap. </p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
                                 </div>
-                                <div class="share-articles-icon">
-                                    <ul>
-                                        <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    </ul>
+                                <div class="auther-name">
+                                    Pankaj Chaudhary
                                 </div>
-
-
                             </div>
+
+
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    14 November 2019
+                                </div>
+                            </div>
+
                         </div>
+                        <!---End of Author-Date-->
 
-                    </div>
-                </div>
-            </div>
-            <!-- article content end-->
-
-
-          <!-- article content start-->
-          <div class="articles-content">
-            <h6>Demystifying Asynchronous Rust</h6>
-            <p>This post is in the form of the book where you'll get to know the
-               Asynchronous concept in the Rust Programming.</p>
-            <!---Author-Date-->
-            <div class="author-date">
-              <div class="icon-left">
-                <div class="auther-user">
-                  <i class="fa fa-user-circle-o"></i>
-                </div>
-                <div class="auther-name">
-                  Clement Rey
-                </div>
-              </div>
-
-
-              <div class="icon-right">
-                <div class="auther-date">
-                  <i class="fa fa-calendar"></i>
-                </div>
-                <div class="date">
-                14 November 2019
-                </div>
-              </div>
-
-            </div>
-            <!---End of Author-Date-->
-
-
-            <!---Bttn and share-->
-            <div class="articles-readmore">
-              <div class="row">
-                <div class="read-more col-md-6">
-                  <div class="article-bttn-share">
-                    <a href="https://teh-cmc.github.io/rust-async/html/"  target="_blank"  class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="share-articles">
-                    <div class="share-articles-heading">
-                      <h6>Share Article</h6>
-                    </div>
-                    <div class="share-articles-icon">
-                      <ul>
-                        <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <!-- article content end-->
-
-          <!-- article content start-->
-          <div class="articles-content">
-            <h6>Conf-Count: Conference Monitoring System based on Image Recognition in Rust</h6>
-            <p>Explore how to create web-services in Rust Programming using Actix-Web, AWS and many more.</p>
-            <!---Author-Date-->
-            <div class="author-date">
-              <div class="icon-left">
-                <div class="auther-user">
-                  <i class="fa fa-user-circle-o"></i>
-                </div>
-                <div class="auther-name">
-                  Pawan Bisht
-                </div>
-              </div>
-
-
-              <div class="icon-right">
-                <div class="auther-date">
-                  <i class="fa fa-calendar"></i>
-                </div>
-                <div class="date">
-                  11 November 2019
-                </div>
-              </div>
-
-            </div>
-            <!---End of Author-Date-->
-
-
-            <!---Bttn and share-->
-            <div class="articles-readmore">
-              <div class="row">
-                <div class="read-more col-md-6">
-                  <div class="article-bttn-share">
-                    <a href="https://blog.knoldus.com/conf-count-conference-monitoring-system-based-on-image-recognition-in-rust/"  target="_blank"  class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="share-articles">
-                    <div class="share-articles-heading">
-                      <h6>Share Article</h6>
-                    </div>
-                    <div class="share-articles-icon">
-                      <ul>
-                        <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <!-- article content end-->
-
-          <!-- article content start-->
-               <div class="articles-content">
-                <h6>Generalizing Coroutines in Rust</h6>
-                <p>Explore the concept of pause and resume OS threads and how to generalize them.</p>
-
-                <!---Author-Date-->
-                <div class="author-date">
-                  <div class="icon-left">
-                    <div class="auther-user">
-                      <i class="fa fa-user-circle-o"></i>
-                    </div>
-                    <div class="auther-name">
-                      Sam Sartor
-                    </div>
-                  </div>
-                  <div class="icon-right">
-                    <div class="auther-date">
-                      <i class="fa fa-calendar"></i>
-                    </div>
-                    <div class="date">
-                      11 November 2019
-                    </div>
-                  </div>
-
-                </div>
-                <div class="articles-readmore">
-                  <div class="row">
-                    <div class="read-more col-md-6">
-                      <div class="article-bttn-share">
-                        <a href="https://samsartor.com/coroutines-1/"  target="_blank" class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-
-                      </div>
-
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="share-articles">
-                        <div class="share-articles-heading">
-                          <h6>Share Article</h6>
-                        </div>
-                        <div class="share-articles-icon">
-                          <ul>
-                            <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-
-
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-               <!-- article content end-->
-
-		<!-- article content start-->
-              <div class="articles-content">
-                <h6>CSS in librsvg is now in Rust, Courtesy of Mozilla Servo</h6>
-                <p>Check how libsvg parse and match all types of CSS files using StTheme and StThemeNode.
-                </p>
-                <!---Author-Date-->
-                <div class="author-date">
-                  <div class="icon-left">
-                    <div class="auther-user">
-                      <i class="fa fa-user-circle-o"></i>
-                    </div>
-                    <div class="auther-name">
-                      Federico Mena Quintero
-                    </div>
-                  </div>
-                  <div class="icon-right">
-                    <div class="auther-date">
-                      <i class="fa fa-calendar"></i>
-                    </div>
-                    <div class="date">
-                    11 November 2019
-                    </div>
-                  </div>
-
-                </div>
-                <!---End of Author-Date-->
-
-                    <!---Bttn and share-->
-                <div class="articles-readmore">
-                  <div class="row">
-                    <div class="read-more col-md-6">
-                      <div class="article-bttn-share">
-                        <a href="https://people.gnome.org/~federico/blog/css-in-librsvg-is-now-in-rust.html" target="_blank"   class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="share-articles">
-                        <div class="share-articles-heading">
-                          <h6>Share Article</h6>
-                        </div>
-                        <div class="share-articles-icon">
-                          <ul>
-                            <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-
-
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-               <!-- article content end-->
-
-		<!-- article content start-->
-              <div class="articles-content">
-                <h6>Putting Rust in the Kernel with eBPF</h6>
-                <p>Explore what are the challenges faced while putting Rust in
-                  the Kernal and how to make multiple languages work together.</p>
-                <!---Author-Date-->
-                <div class="author-date">
-                  <div class="icon-left">
-                    <div class="auther-user">
-                      <i class="fa fa-user-circle-o"></i>
-                    </div>
-                    <div class="auther-name">
-                      Peter Parkanyi
-                    </div>
-                  </div>
-                  <div class="icon-right">
-                    <div class="auther-date">
-                      <i class="fa fa-calendar"></i>
-                    </div>
-                    <div class="date">
-                    7 November 2019
-                    </div>
-                  </div>
-
-                </div>
-                <!---End of Author-Date-->
-
-                    <!---Bttn and share-->
-                <div class="articles-readmore">
-                  <div class="row">
-                    <div class="read-more col-md-6">
-                      <div class="article-bttn-share">
-                        <a href="https://blog.redsift.com/labs/putting-rust-in-the-kernel-with-ebpf/" target="_blank"  class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="share-articles">
-                        <div class="share-articles-heading">
-                          <h6>Share Article</h6>
-                        </div>
-                        <div class="share-articles-icon">
-                          <ul>
-                            <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-
-
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-               <!-- article content end-->
-       <!-- article content start-->
-                 <div class="articles-content">
-                   <h6>Closer Scrutiny of Rust Collections</h6>
-                   <p>Explore the concept of Rust Collections and how we can use
-                     the Vector and LinkedList in our program.</p>
-                   <!---Author-Date-->
-                   <div class="author-date">
-                     <div class="icon-left">
-                       <div class="auther-user">
-                         <i class="fa fa-user-circle-o"></i>
-                       </div>
-                       <div class="auther-name">
-                         Pankaj Chaudhary
-                       </div>
-                     </div>
-                     <div class="icon-right">
-                       <div class="auther-date">
-                         <i class="fa fa-calendar"></i>
-                       </div>
-                       <div class="date">
-                         6 November 2019
-                       </div>
-                     </div>
-
-                   </div>
-                   <!---End of Author-Date-->
-
-                       <!---Bttn and share-->
-                   <div class="articles-readmore">
-                     <div class="row">
-                       <div class="read-more col-md-6">
-                         <div class="article-bttn-share">
-                           <a href="https://blog.knoldus.com/closer-scrutiny-of-rust-collections/" target="_blank"  class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-                         </div>
-                       </div>
-                       <div class="col-md-6">
-                         <div class="share-articles">
-                           <div class="share-articles-heading">
-                             <h6>Share Article</h6>
-                           </div>
-                           <div class="share-articles-icon">
-                             <ul>
-                               <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                               <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                               <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                             </ul>
-                           </div>
-
-
-                         </div>
-                       </div>
-
-                     </div>
-                   </div>
-                 </div>
-                  <!-- article content end-->
-
-        <!-- article content start-->
-                  <div class="articles-content">
-                    <h6>Rust Support for Windows Runtime</h6>
-                    <p>This article pertains to the update for Rust Programming
-                       language which provides support for Windows Operating System.</p>
-                    <!---Author-Date-->
-                    <div class="author-date">
-                      <div class="icon-left">
-                        <div class="auther-user">
-                          <i class="fa fa-user-circle-o"></i>
-                        </div>
-                        <div class="auther-name">
-                          Kenny Kerr
-                        </div>
-                      </div>
-                      <div class="icon-right">
-                        <div class="auther-date">
-                          <i class="fa fa-calendar"></i>
-                        </div>
-                        <div class="date">
-                          5 November 2019
-                        </div>
-                      </div>
-
-                    </div>
-                    <!---End of Author-Date-->
 
                         <!---Bttn and share-->
-                    <div class="articles-readmore">
-                      <div class="row">
-                        <div class="read-more col-md-6">
-                          <div class="article-bttn-share">
-                            <a href="https://kennykerr.ca/2019/11/05/rust/" target="_blank"  class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="share-articles">
-                            <div class="share-articles-heading">
-                              <h6>Share Article</h6>
-                            </div>
-                            <div class="share-articles-icon">
-                              <ul>
-                                <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              </ul>
-                            </div>
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://blog.knoldus.com/closer-scrutiny-of-rust-collections-part-2/"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
 
 
-                          </div>
-                        </div>
+                                    </div>
+                                </div>
 
-                      </div>
-                    </div>
-                  </div>
-                   <!-- article content end-->
-
-     <!-- article content start-->
-               <div class="articles-content">
-                 <h6>Rust Concurrency Patterns: Condvars and Locks</h6>
-                 <p>Explore the functionality of Rust's structures Condvar and
-                   Mutex and how they helps in concurrent programming.</p>
-                 <!---Author-Date-->
-                 <div class="author-date">
-                   <div class="icon-left">
-                     <div class="auther-user">
-                       <i class="fa fa-user-circle-o"></i>
-                     </div>
-                     <div class="auther-name">
-                       Gregory Terzian
-                     </div>
-                   </div>
-                   <div class="icon-right">
-                     <div class="auther-date">
-                       <i class="fa fa-calendar"></i>
-                     </div>
-                     <div class="date">
-                       2 November 2019
-                     </div>
-                   </div>
-
-                 </div>
-                 <!---End of Author-Date-->
-
-                     <!---Bttn and share-->
-                 <div class="articles-readmore">
-                   <div class="row">
-                     <div class="read-more col-md-6">
-                       <div class="article-bttn-share">
-                         <a href="https://medium.com/@polyglot_factotum/rust-concurrency-patterns-condvars-and-locks-e278f18db74f" target="_blank"  class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-                       </div>
-                     </div>
-                     <div class="col-md-6">
-                       <div class="share-articles">
-                         <div class="share-articles-heading">
-                           <h6>Share Article</h6>
-                         </div>
-                         <div class="share-articles-icon">
-                           <ul>
-                             <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                             <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                             <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           </ul>
-                         </div>
-
-
-                       </div>
-                     </div>
-
-                   </div>
-                 </div>
-               </div>
-                <!-- article content end-->
-
-          <!-- article content start-->
-              <div class="articles-content">
-                <h6>Completing the Transition to the New Borrow Checker</h6>
-                <p>This article tells about the features of the new borrow checker
-                  and what are the limitation of the previous borrow checker.</p>
-                <!---Author-Date-->
-                <div class="author-date">
-                  <div class="icon-left">
-                    <div class="auther-user">
-                      <i class="fa fa-user-circle-o"></i>
-                    </div>
-                    <div class="auther-name">
-                      Niko Matsakis
-                    </div>
-                  </div>
-                  <div class="icon-right">
-                    <div class="auther-date">
-                      <i class="fa fa-calendar"></i>
-                    </div>
-                    <div class="date">
-                      1 November 2019
-                    </div>
-                  </div>
-
-                </div>
-                <!---End of Author-Date-->
-
-                    <!---Bttn and share-->
-                <div class="articles-readmore">
-                  <div class="row">
-                    <div class="read-more col-md-6">
-                      <div class="article-bttn-share">
-                        <a href="https://blog.rust-lang.org/2019/11/01/nll-hard-errors.html" target="_blank"  class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="share-articles">
-                        <div class="share-articles-heading">
-                          <h6>Share Article</h6>
-                        </div>
-                        <div class="share-articles-icon">
-                          <ul>
-                            <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-
-
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-               <!-- article content end-->
-
-        </div>
-        <!-- Articles block-->
-        <!-- Events block-->
-        <div class="events" id="events">
-            <div class="articles">
-                <h6>Events</h6>
-              </div>
-              <!-- event content start-->
-              <div class="articles-content">
-                <h6>Tech Triveni 2.0 </h6>
-                <p>Attend Asia's premier  Big data, Functional, and Reactive
-                  programming event of the year. Get a FREE conference pass on
-                  buying the Workshop ticket. Plus for all Rust Times readers
-                  there is a special 50% discount on early bird rate. Use Code: TECHTRIVENI50</p>
-                <!---Author-Date-->
-                <div class="author-date">
-                  <div class="icon-left">
-                    <div class="auther-user">
-                      <i class="fa fa-calendar"></i>
-                    </div>
-                    <div class="auther-name">
-                      23-24th November
-                    </div>
-                  </div>
-                  <div class="icon-right">
-                    <div class="auther-date">
-                      <i class="fa fa-map-marker"></i>
-                    </div>
-                    <div class="date">
-                      Delhi, India
-                    </div>
-                  </div>
-                    </div>
-                <!---End of Author-Date-->
-                <!---Bttn and share-->
-                <div class="articles-readmore">
-                  <div class="row">
-                    <div class="read-more col-md-6">
-                      <div class="article-bttn-share">
-                        <a href="https://techtriveni.com/"  target="_blank"  class="btn btn-primary btn-lg read-bttn">Read More</a>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="share-articles">
-                        <div class="share-articles-heading">
-                          <h6>Share Event Details</h6>
-                        </div>
-                        <div class="share-articles-icon">
-                          <ul>
-                            <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-               <!-- event content end-->
-
-
-              <!-- event content start-->
-              <div class="articles-content">
-                <h6>Rust Hack and Learn </h6>
-                <p>Let's meet for open hacking and (co)-learning in our bi-weekly learning group!</p>
-                <!---Author-Date-->
-                <div class="author-date">
-                  <div class="icon-left">
-                    <div class="auther-user">
-                      <i class="fa fa-calendar"></i>
-                    </div>
-                    <div class="auther-name">
-                      27 November 2019
-                    </div>
-                  </div>
-                  <div class="icon-right">
-                    <div class="auther-date">
-                      <i class="fa fa-map-marker"></i>
-                    </div>
-                    <div class="date">
-                      Berlin, DE
-                    </div>
-                  </div>
-                    </div>
-                <!---End of Author-Date-->
-                <!---Bttn and share-->
-                <div class="articles-readmore">
-                  <div class="row">
-                    <div class="read-more col-md-6">
-                      <div class="article-bttn-share">
-                        <a href="https://www.meetup.com/opentechschool-berlin/events/nxdpgryzpbkc/"  target="_blank"  class="btn btn-primary btn-lg read-bttn">Read More</a>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="share-articles">
-                        <div class="share-articles-heading">
-                          <h6>Share Event Details</h6>
-                        </div>
-                        <div class="share-articles-icon">
-                          <ul>
-                            <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-               <!-- event content end-->
-
-        </div>
-        <!-- Events block-->
-
-        <!-- JObs block-->
-        <div class="jobs" id="jobs">
-            <div class="articles">
-                <h6>Jobs</h6>
-              </div
-
-              <!-- Job content start-->
-             <div class="articles-content">
-               <div class="row">
-                 <!---- Start left column----->
-                 <div class="articles-content-1">
-                     <h6>Rust Team Engineer</h6>
-                   </div>
-                 <div class="col-md-8">
-
-                   <!---Author-Date-->
-                   <div class="author-date">
-                     <div class="icon-left">
-                       <div class="auther-user">
-                         <i class="fa fa-building-o"></i>
-                       </div>
-                       <div class="auther-name">
-                           Mozilla
-                       </div>
-                     </div>
-
-                     <div class="icon-right">
-                       <div class="auther-date">
-                         <i class="fa fa-map-marker"></i>
-                       </div>
-                       <div class="date">
-                         Multiple Locations
-                       </div>
-                     </div>
-
-                   </div>
-                   <!---End of Author-Date-->
-
-                   <!---Start Bttn--->
-                   <div class="articles-readmore">
-                     <div class="article-bttn-share">
-                       <a href="https://careers.mozilla.org/position/gh/1948149/"  target="_blank" class="btn btn-primary btn-lg read-bttn">Know More</a>
-                     </div>
-                   </div>
-
-                   <!---End Bttn--->
-                 </div>
-                 <!---End of left column-->
-                 <div class="col-md-4">
-
-                   <div class="share-articles">
-                     <div class="share-articles-heading">
-                       <h6>Share Event Details</h6>
-                     </div>
-                     <div class="share-articles-icon">
-                       <ul>
-                         <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                         <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                         <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                       </ul>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <!-- Job content end-->
-
-              <!-- Job content start-->
-             <div class="articles-content">
-               <div class="row">
-                 <!---- Start left column----->
-                 <div class="articles-content-1">
-                     <h6>Embedded Software Engineer</h6>
-                   </div>
-                 <div class="col-md-8">
-
-                   <!---Author-Date-->
-                   <div class="author-date">
-                     <div class="icon-left">
-                       <div class="auther-user">
-                         <i class="fa fa-building-o"></i>
-                       </div>
-                       <div class="auther-name">
-                           Sense
-                       </div>
-                     </div>
-
-                     <div class="icon-right">
-                       <div class="auther-date">
-                         <i class="fa fa-map-marker"></i>
-                       </div>
-                       <div class="date">
-                         Cambridge, US
-                       </div>
-                     </div>
-
-                   </div>
-                   <!---End of Author-Date-->
-
-                   <!---Start Bttn--->
-                   <div class="articles-readmore">
-                     <div class="article-bttn-share">
-                       <a href="https://apply.workable.com/sense/j/ADDB5A7717/"  target="_blank" class="btn btn-primary btn-lg read-bttn">Know More</a>
-                     </div>
-                   </div>
-
-                   <!---End Bttn--->
-                 </div>
-                 <!---End of left column-->
-                 <div class="col-md-4">
-
-                   <div class="share-articles">
-                     <div class="share-articles-heading">
-                       <h6>Share Event Details</h6>
-                     </div>
-                     <div class="share-articles-icon">
-                       <ul>
-                         <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                         <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                         <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                       </ul>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <!-- Job content end-->
-              <!-- Job content start-->
-             <div class="articles-content">
-               <div class="row">
-                 <!---- Start left column----->
-                 <div class="articles-content-1">
-                     <h6>Senior Blockchain Engineer</h6>
-                   </div>
-                 <div class="col-md-8">
-
-                   <!---Author-Date-->
-                   <div class="author-date">
-                     <div class="icon-left">
-                       <div class="auther-user">
-                         <i class="fa fa-building-o"></i>
-                       </div>
-                       <div class="auther-name">
-                          Nervos
-                       </div>
-                     </div>
-
-                     <div class="icon-right">
-                       <div class="auther-date">
-                         <i class="fa fa-map-marker"></i>
-                       </div>
-                       <div class="date">
-                           Remote-Hangzhou
-                       </div>
-                     </div>
-
-                   </div>
-                   <!---End of Author-Date-->
-
-                   <!---Start Bttn--->
-                   <div class="articles-readmore">
-                     <div class="article-bttn-share">
-                       <a href="https://angel.co/company/nervos-1/jobs/589230-senior-blockchain-engineer"  target="_blank" class="btn btn-primary btn-lg read-bttn">Know More</a>
-                     </div>
-                   </div>
-
-                   <!---End Bttn--->
-                 </div>
-                 <!---End of left column-->
-                 <div class="col-md-4">
-
-                   <div class="share-articles">
-                     <div class="share-articles-heading">
-                       <h6>Share Event Details</h6>
-                     </div>
-                     <div class="share-articles-icon">
-                       <ul>
-                         <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                         <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                         <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                       </ul>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <!-- Job content end-->
-
-              <!-- Job content start-->
-             <div class="articles-content">
-               <div class="row">
-                 <!---- Start left column----->
-                 <div class="articles-content-1">
-                     <h6>Software Development Engineer - AWS Crypto Tools</h6>
-                   </div>
-                 <div class="col-md-8">
-
-                   <!---Author-Date-->
-                   <div class="author-date">
-                     <div class="icon-left">
-                       <div class="auther-user">
-                         <i class="fa fa-building-o"></i>
-                       </div>
-                       <div class="auther-name">
-                          Amazon
-                       </div>
-                     </div>
-
-                     <div class="icon-right">
-                       <div class="auther-date">
-                         <i class="fa fa-map-marker"></i>
-                       </div>
-                       <div class="date">
-                           Seattle, Washington
-                       </div>
-                     </div>
-
-                   </div>
-                   <!---End of Author-Date-->
-
-                   <!---Start Bttn--->
-                   <div class="articles-readmore">
-                     <div class="article-bttn-share">
-                       <a href="https://account.amazon.jobs/en-US/login?relay=%2Fen-US%2Fjobs%2F868924%2Fapply"  target="_blank" class="btn btn-primary btn-lg read-bttn">Know More</a>
-                     </div>
-                   </div>
-
-                   <!---End Bttn--->
-                 </div>
-                 <!---End of left column-->
-                 <div class="col-md-4">
-
-                   <div class="share-articles">
-                     <div class="share-articles-heading">
-                       <h6>Share Event Details</h6>
-                     </div>
-                     <div class="share-articles-icon">
-                       <ul>
-                         <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                         <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                         <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                       </ul>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <!-- Job content end-->
-
-        </div>
-        <!-- JObs block-->
-
-    <!-- Releases block-->
-    <div class="releases" id="releases">
-        <div class="articles">
-            <h6>Releases</h6>
-          </div>
-        <!-- Release content start-->
-        <div class="articles-content">
-            <h6>Async-await on Stable Rust!</h6>
-            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
-            <!---Bttn and share-->
-            <div class="articles-readmore-1">
-                <div class="row">
-                    <div class="read-more col-md-6">
-                        <div class="article-bttn-share">
-                            <a  target="_blank" href="https://blog.rust-lang.org/2019/11/07/Async-await-stable.html" class="btn btn-primary btn-lg read-bttn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="share-articles">
-                            <div class="share-articles-heading">
-                                <h6>Share this Opportunity</h6>
-                            </div>
-                            <div class="share-articles-icon">
-                                <ul>
-                                    <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-         <!-- Release content end-->
+                    <!-- article content end-->
 
-          <!-- Release content start-->
-          <div class="articles-content">
-              <h6>Announcing Rust 1.39.0</h6>
-              <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
-              <!---Bttn and share-->
-              <div class="articles-readmore-1">
-                <div class="row">
-                  <div class="read-more col-md-6">
-                    <div class="article-bttn-share">
-                      <a  target="_blank" href="https://blog.rust-lang.org/2019/11/07/Rust-1.39.0.html" class="btn btn-primary btn-lg read-bttn">Read More</a>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="share-articles">
-                      <div class="share-articles-heading">
-                        <h6>Share this Opportunity</h6>
-                      </div>
-                      <div class="share-articles-icon">
-                        <ul>
-                          <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                          <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-             <!-- Release content end-->
 
-            <!-- Release content start-->
-            <div class="articles-content">
-                <h6>Announcing Async-std 1.0</h6>
-                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
-                <!---Bttn and share-->
-                <div class="articles-readmore-1">
-                  <div class="row">
-                    <div class="read-more col-md-6">
-                      <div class="article-bttn-share">
-                        <a  target="_blank" href="https://async.rs/blog/announcing-async-std-1-0/" class="btn btn-primary btn-lg read-bttn">Read More</a>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="share-articles">
-                        <div class="share-articles-heading">
-                          <h6>Share this Opportunity</h6>
-                        </div>
-                        <div class="share-articles-icon">
-                          <ul>
-                            <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Release content end-->
-
-              <!-- Release content start-->
-              <div class="articles-content">
-                  <h6>Release - Mun v0.1.0</h6>
-                  <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
-                  <!---Bttn and share-->
-                  <div class="articles-readmore-1">
-                    <div class="row">
-                      <div class="read-more col-md-6">
-                        <div class="article-bttn-share">
-                          <a  target="_blank" href="https://mun-lang.org/blog/2019/11/11/release-mun-v0-1-0/" class="btn btn-primary btn-lg read-bttn">Read More</a>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="share-articles">
-                          <div class="share-articles-heading">
-                            <h6>Share this Opportunity</h6>
-                          </div>
-                          <div class="share-articles-icon">
-                            <ul>
-                              <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                              <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Release content end-->
-
-                <!-- Release content start-->
-                <div class="articles-content">
-                    <h6>Futures 0.3 Released</h6>
-                    <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
-                    <!---Bttn and share-->
-                    <div class="articles-readmore-1">
-                      <div class="row">
-                        <div class="read-more col-md-6">
-                          <div class="article-bttn-share">
-                            <a  target="_blank" href="https://github.com/rust-lang-nursery/futures-rs/releases/tag/0.3.0" class="btn btn-primary btn-lg read-bttn">Read More</a>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="share-articles">
-                            <div class="share-articles-heading">
-                              <h6>Share this Opportunity</h6>
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>Demystifying Asynchronous Rust</h6>
+                        <p>This post is in the form of the book where you'll get to know the
+                            Asynchronous concept in the Rust Programming.</p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Clement Rey
+                                </div>
                             </div>
-                            <div class="share-articles-icon">
-                              <ul>
-                                <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              </ul>
+
+
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    14 November 2019
+                                </div>
                             </div>
-                          </div>
+
                         </div>
-                      </div>
+                        <!---End of Author-Date-->
+
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://teh-cmc.github.io/rust-async/html/" target="_blank"
+                                           class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <!-- Release content end-->
+                    <!-- article content end-->
 
-    </div>
-    <!-- Releases block-->
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>Conf-Count: Conference Monitoring System based on Image Recognition in Rust</h6>
+                        <p>Explore how to create web-services in Rust Programming using Actix-Web, AWS and many
+                            more.</p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Pawan Bisht
+                                </div>
+                            </div>
 
-    <!-- Templates/XLR8RS block-->
-    <div class="templates" id="templates">
-        <div class="articles">
-            <h6>Templates/XLR8RS</h6>
-          </div>
-          <!-- template/xlr8r content start-->
-                  <div class="articles-content">
-                      <h6>Raspicam a Library</h6>
-                      <!---Author-Date-->
-                      <div class="author-date">
-                          <div class="icon-left">
-                              <div class="auther-user">
-                                  <i class="fa fa-user-circle-o"></i>
-                              </div>
-                              <div class="auther-name">
-                                  Pawan Bisht
-                              </div>
-                          </div>
-                      </div>
-                      <!---End of Author-Date-->
 
-                      <!---Bttn and share-->
-                      <div class="articles-readmore">
-                          <div class="row">
-                              <div class="read-more col-md-6">
-                                  <div class="article-bttn-share">
-                                      <a href="https://techhub.knoldus.com/dashboard/projects/rust/5d97065405f9dd636c5cbd5d"  target="_blank"  class="btn btn-primary btn-lg read-bttn">Read More</a>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="share-articles">
-                                      <div class="share-articles-heading">
-                                          <h6>Share Article</h6>
-                                      </div>
-                                      <div class="share-articles-icon">
-                                          <ul>
-                                              <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                              <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                              <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- template/xlr8r content end-->
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    11 November 2019
+                                </div>
+                            </div>
 
-        <!-- template/xlr8r content start-->
-              <div class="articles-content">
-                  <h6>Cargo Plugin for Docker in Rust</h6>
-                  <!---Author-Date-->
-                  <div class="author-date">
-                      <div class="icon-left">
-                          <div class="auther-user">
-                              <i class="fa fa-user-circle-o"></i>
-                          </div>
-                          <div class="auther-name">
-                              Pawan Bisht
-                          </div>
-                      </div>
-                  </div>
-                  <!---End of Author-Date-->
+                        </div>
+                        <!---End of Author-Date-->
 
-                  <!---Bttn and share-->
-                  <div class="articles-readmore">
-                      <div class="row">
-                          <div class="read-more col-md-6">
-                              <div class="article-bttn-share">
-                                  <a href="https://techhub.knoldus.com/dashboard/projects/rust/5d97065405f9dd636c5cbd5d"  target="_blank"  class="btn btn-primary btn-lg read-bttn">Read More</a>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="share-articles">
-                                  <div class="share-articles-heading">
-                                      <h6>Share Article</h6>
-                                  </div>
-                                  <div class="share-articles-icon">
-                                      <ul>
-                                          <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                          <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                          <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- template/xlr8r content end-->
-              <!-- template/xlr8r content start-->
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://blog.knoldus.com/conf-count-conference-monitoring-system-based-on-image-recognition-in-rust/"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- article content end-->
+
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>Generalizing Coroutines in Rust</h6>
+                        <p>Explore the concept of pause and resume OS threads and how to generalize them.</p>
+
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Sam Sartor
+                                </div>
+                            </div>
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    11 November 2019
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://samsartor.com/coroutines-1/" target="_blank"
+                                           class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- article content end-->
+
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>CSS in librsvg is now in Rust, Courtesy of Mozilla Servo</h6>
+                        <p>Check how libsvg parse and match all types of CSS files using StTheme and StThemeNode.
+                        </p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Federico Mena Quintero
+                                </div>
+                            </div>
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    11 November 2019
+                                </div>
+                            </div>
+
+                        </div>
+                        <!---End of Author-Date-->
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://people.gnome.org/~federico/blog/css-in-librsvg-is-now-in-rust.html"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- article content end-->
+
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>Putting Rust in the Kernel with eBPF</h6>
+                        <p>Explore what are the challenges faced while putting Rust in
+                            the Kernal and how to make multiple languages work together.</p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Peter Parkanyi
+                                </div>
+                            </div>
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    7 November 2019
+                                </div>
+                            </div>
+
+                        </div>
+                        <!---End of Author-Date-->
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://blog.redsift.com/labs/putting-rust-in-the-kernel-with-ebpf/"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- article content end-->
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>Closer Scrutiny of Rust Collections</h6>
+                        <p>Explore the concept of Rust Collections and how we can use
+                            the Vector and LinkedList in our program.</p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Pankaj Chaudhary
+                                </div>
+                            </div>
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    6 November 2019
+                                </div>
+                            </div>
+
+                        </div>
+                        <!---End of Author-Date-->
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://blog.knoldus.com/closer-scrutiny-of-rust-collections/"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- article content end-->
+
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>Rust Support for Windows Runtime</h6>
+                        <p>This article pertains to the update for Rust Programming
+                            language which provides support for Windows Operating System.</p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Kenny Kerr
+                                </div>
+                            </div>
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    5 November 2019
+                                </div>
+                            </div>
+
+                        </div>
+                        <!---End of Author-Date-->
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://kennykerr.ca/2019/11/05/rust/" target="_blank"
+                                           class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- article content end-->
+
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>Rust Concurrency Patterns: Condvars and Locks</h6>
+                        <p>Explore the functionality of Rust's structures Condvar and
+                            Mutex and how they helps in concurrent programming.</p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Gregory Terzian
+                                </div>
+                            </div>
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    2 November 2019
+                                </div>
+                            </div>
+
+                        </div>
+                        <!---End of Author-Date-->
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://medium.com/@polyglot_factotum/rust-concurrency-patterns-condvars-and-locks-e278f18db74f"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- article content end-->
+
+                    <!-- article content start-->
+                    <div class="articles-content">
+                        <h6>Completing the Transition to the New Borrow Checker</h6>
+                        <p>This article tells about the features of the new borrow checker
+                            and what are the limitation of the previous borrow checker.</p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Niko Matsakis
+                                </div>
+                            </div>
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="date">
+                                    1 November 2019
+                                </div>
+                            </div>
+
+                        </div>
+                        <!---End of Author-Date-->
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://blog.rust-lang.org/2019/11/01/nll-hard-errors.html"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- article content end-->
+
+                </div>
+                <!-- Articles block-->
+                <!-- Events block-->
+                <div class="events" id="events">
+                    <div class="articles">
+                        <h6>Events</h6>
+                    </div>
+                    <!-- event content start-->
+                    <div class="articles-content">
+                        <h6>Tech Triveni 2.0 </h6>
+                        <p>Attend Asia's premier Big data, Functional, and Reactive
+                            programming event of the year. Get a FREE conference pass on
+                            buying the Workshop ticket. Plus for all Rust Times readers
+                            there is a special 50% discount on early bird rate. Use Code: TECHTRIVENI50</p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="auther-name">
+                                    23-24th November
+                                </div>
+                            </div>
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="date">
+                                    Delhi, India
+                                </div>
+                            </div>
+                        </div>
+                        <!---End of Author-Date-->
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://techtriveni.com/" target="_blank"
+                                           class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Event Details</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- event content end-->
+
+
+                    <!-- event content start-->
+                    <div class="articles-content">
+                        <h6>Rust Hack and Learn </h6>
+                        <p>Let's meet for open hacking and (co)-learning in our bi-weekly learning group!</p>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="auther-name">
+                                    27 November 2019
+                                </div>
+                            </div>
+                            <div class="icon-right">
+                                <div class="auther-date">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="date">
+                                    Berlin, DE
+                                </div>
+                            </div>
+                        </div>
+                        <!---End of Author-Date-->
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://www.meetup.com/opentechschool-berlin/events/nxdpgryzpbkc/"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Event Details</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- event content end-->
+
+                </div>
+                <!-- Events block-->
+
+                <!-- JObs block-->
+                <div class="jobs" id="jobs">
+                    <div class="articles">
+                        <h6>Jobs</h6>
+                    </div
+
+                            <!-- Job content start-->
+                    <div class="articles-content">
+                        <div class="row">
+                            <!---- Start left column----->
+                            <div class="articles-content-1">
+                                <h6>Rust Team Engineer</h6>
+                            </div>
+                            <div class="col-md-8">
+
+                                <!---Author-Date-->
+                                <div class="author-date">
+                                    <div class="icon-left">
+                                        <div class="auther-user">
+                                            <i class="fa fa-building-o"></i>
+                                        </div>
+                                        <div class="auther-name">
+                                            Mozilla
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-right">
+                                        <div class="auther-date">
+                                            <i class="fa fa-map-marker"></i>
+                                        </div>
+                                        <div class="date">
+                                            Multiple Locations
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!---End of Author-Date-->
+
+                                <!---Start Bttn--->
+                                <div class="articles-readmore">
+                                    <div class="article-bttn-share">
+                                        <a href="https://careers.mozilla.org/position/gh/1948149/" target="_blank"
+                                           class="btn btn-primary btn-lg read-bttn">Know More</a>
+                                    </div>
+                                </div>
+
+                                <!---End Bttn--->
+                            </div>
+                            <!---End of left column-->
+                            <div class="col-md-4">
+
+                                <div class="share-articles">
+                                    <div class="share-articles-heading">
+                                        <h6>Share Event Details</h6>
+                                    </div>
+                                    <div class="share-articles-icon">
+                                        <ul>
+                                            <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                 aria-hidden="true"></i></a></li>
+                                            <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                  aria-hidden="true"></i></a></li>
+                                            <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                  aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job content end-->
+
+                    <!-- Job content start-->
+                    <div class="articles-content">
+                        <div class="row">
+                            <!---- Start left column----->
+                            <div class="articles-content-1">
+                                <h6>Embedded Software Engineer</h6>
+                            </div>
+                            <div class="col-md-8">
+
+                                <!---Author-Date-->
+                                <div class="author-date">
+                                    <div class="icon-left">
+                                        <div class="auther-user">
+                                            <i class="fa fa-building-o"></i>
+                                        </div>
+                                        <div class="auther-name">
+                                            Sense
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-right">
+                                        <div class="auther-date">
+                                            <i class="fa fa-map-marker"></i>
+                                        </div>
+                                        <div class="date">
+                                            Cambridge, US
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!---End of Author-Date-->
+
+                                <!---Start Bttn--->
+                                <div class="articles-readmore">
+                                    <div class="article-bttn-share">
+                                        <a href="https://apply.workable.com/sense/j/ADDB5A7717/" target="_blank"
+                                           class="btn btn-primary btn-lg read-bttn">Know More</a>
+                                    </div>
+                                </div>
+
+                                <!---End Bttn--->
+                            </div>
+                            <!---End of left column-->
+                            <div class="col-md-4">
+
+                                <div class="share-articles">
+                                    <div class="share-articles-heading">
+                                        <h6>Share Event Details</h6>
+                                    </div>
+                                    <div class="share-articles-icon">
+                                        <ul>
+                                            <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                 aria-hidden="true"></i></a></li>
+                                            <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                  aria-hidden="true"></i></a></li>
+                                            <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                  aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job content end-->
+                    <!-- Job content start-->
+                    <div class="articles-content">
+                        <div class="row">
+                            <!---- Start left column----->
+                            <div class="articles-content-1">
+                                <h6>Senior Blockchain Engineer</h6>
+                            </div>
+                            <div class="col-md-8">
+
+                                <!---Author-Date-->
+                                <div class="author-date">
+                                    <div class="icon-left">
+                                        <div class="auther-user">
+                                            <i class="fa fa-building-o"></i>
+                                        </div>
+                                        <div class="auther-name">
+                                            Nervos
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-right">
+                                        <div class="auther-date">
+                                            <i class="fa fa-map-marker"></i>
+                                        </div>
+                                        <div class="date">
+                                            Remote-Hangzhou
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!---End of Author-Date-->
+
+                                <!---Start Bttn--->
+                                <div class="articles-readmore">
+                                    <div class="article-bttn-share">
+                                        <a href="https://angel.co/company/nervos-1/jobs/589230-senior-blockchain-engineer"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Know More</a>
+                                    </div>
+                                </div>
+
+                                <!---End Bttn--->
+                            </div>
+                            <!---End of left column-->
+                            <div class="col-md-4">
+
+                                <div class="share-articles">
+                                    <div class="share-articles-heading">
+                                        <h6>Share Event Details</h6>
+                                    </div>
+                                    <div class="share-articles-icon">
+                                        <ul>
+                                            <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                 aria-hidden="true"></i></a></li>
+                                            <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                  aria-hidden="true"></i></a></li>
+                                            <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                  aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job content end-->
+
+                    <!-- Job content start-->
+                    <div class="articles-content">
+                        <div class="row">
+                            <!---- Start left column----->
+                            <div class="articles-content-1">
+                                <h6>Software Development Engineer - AWS Crypto Tools</h6>
+                            </div>
+                            <div class="col-md-8">
+
+                                <!---Author-Date-->
+                                <div class="author-date">
+                                    <div class="icon-left">
+                                        <div class="auther-user">
+                                            <i class="fa fa-building-o"></i>
+                                        </div>
+                                        <div class="auther-name">
+                                            Amazon
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-right">
+                                        <div class="auther-date">
+                                            <i class="fa fa-map-marker"></i>
+                                        </div>
+                                        <div class="date">
+                                            Seattle, Washington
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!---End of Author-Date-->
+
+                                <!---Start Bttn--->
+                                <div class="articles-readmore">
+                                    <div class="article-bttn-share">
+                                        <a href="https://account.amazon.jobs/en-US/login?relay=%2Fen-US%2Fjobs%2F868924%2Fapply"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Know More</a>
+                                    </div>
+                                </div>
+
+                                <!---End Bttn--->
+                            </div>
+                            <!---End of left column-->
+                            <div class="col-md-4">
+
+                                <div class="share-articles">
+                                    <div class="share-articles-heading">
+                                        <h6>Share Event Details</h6>
+                                    </div>
+                                    <div class="share-articles-icon">
+                                        <ul>
+                                            <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                 aria-hidden="true"></i></a></li>
+                                            <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                  aria-hidden="true"></i></a></li>
+                                            <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                  aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job content end-->
+
+                </div>
+                <!-- JObs block-->
+
+                <!-- Releases block-->
+                <div class="releases" id="releases">
+                    <div class="articles">
+                        <h6>Releases</h6>
+                    </div>
+                    <!-- Release content start-->
+                    <div class="articles-content">
+                        <h6>Async-await on Stable Rust!</h6>
+                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
+                        <!---Bttn and share-->
+                        <div class="articles-readmore-1">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a target="_blank"
+                                           href="https://blog.rust-lang.org/2019/11/07/Async-await-stable.html"
+                                           class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share this Opportunity</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Release content end-->
+
+                    <!-- Release content start-->
+                    <div class="articles-content">
+                        <h6>Announcing Rust 1.39.0</h6>
+                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
+                        <!---Bttn and share-->
+                        <div class="articles-readmore-1">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a target="_blank" href="https://blog.rust-lang.org/2019/11/07/Rust-1.39.0.html"
+                                           class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share this Opportunity</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Release content end-->
+
+                    <!-- Release content start-->
+                    <div class="articles-content">
+                        <h6>Announcing Async-std 1.0</h6>
+                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
+                        <!---Bttn and share-->
+                        <div class="articles-readmore-1">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a target="_blank" href="https://async.rs/blog/announcing-async-std-1-0/"
+                                           class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share this Opportunity</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Release content end-->
+
+                    <!-- Release content start-->
+                    <div class="articles-content">
+                        <h6>Release - Mun v0.1.0</h6>
+                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
+                        <!---Bttn and share-->
+                        <div class="articles-readmore-1">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a target="_blank"
+                                           href="https://mun-lang.org/blog/2019/11/11/release-mun-v0-1-0/"
+                                           class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share this Opportunity</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Release content end-->
+
+                    <!-- Release content start-->
+                    <div class="articles-content">
+                        <h6>Futures 0.3 Released</h6>
+                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p> -->
+                        <!---Bttn and share-->
+                        <div class="articles-readmore-1">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a target="_blank"
+                                           href="https://github.com/rust-lang-nursery/futures-rs/releases/tag/0.3.0"
+                                           class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share this Opportunity</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Release content end-->
+
+                </div>
+                <!-- Releases block-->
+
+                <!-- Templates/XLR8RS block-->
+                <div class="templates" id="templates">
+                    <div class="articles">
+                        <h6>Templates/XLR8RS</h6>
+                    </div>
+                    <!-- template/xlr8r content start-->
+                    <div class="articles-content">
+                        <h6>Raspicam a Library</h6>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Pawan Bisht
+                                </div>
+                            </div>
+                        </div>
+                        <!---End of Author-Date-->
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://techhub.knoldus.com/dashboard/projects/rust/5d97065405f9dd636c5cbd5d"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- template/xlr8r content end-->
+
+                    <!-- template/xlr8r content start-->
+                    <div class="articles-content">
+                        <h6>Cargo Plugin for Docker in Rust</h6>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Pawan Bisht
+                                </div>
+                            </div>
+                        </div>
+                        <!---End of Author-Date-->
+
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://techhub.knoldus.com/dashboard/projects/rust/5d97065405f9dd636c5cbd5d"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- template/xlr8r content end-->
+                    <!-- template/xlr8r content start-->
                     <div class="articles-content">
                         <h6>Operate RaspberryPi Camera with Rust</h6>
                         <!---Author-Date-->
@@ -1306,7 +1408,8 @@
                             <div class="row">
                                 <div class="read-more col-md-6">
                                     <div class="article-bttn-share">
-                                        <a href="https://techhub.knoldus.com/dashboard/projects/rust/5d96ffea05f9dd636c5cbd5c"  target="_blank"  class="btn btn-primary btn-lg read-bttn">Read More</a>
+                                        <a href="https://techhub.knoldus.com/dashboard/projects/rust/5d96ffea05f9dd636c5cbd5c"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Read More</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -1316,9 +1419,12 @@
                                         </div>
                                         <div class="share-articles-icon">
                                             <ul>
-                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1328,151 +1434,172 @@
                     </div>
                     <!-- template/xlr8r content end-->
                     <!-- template/xlr8r content start-->
-                        <div class="articles-content">
-                            <h6>Build Docke Image for Rust</h6>
-                            <!---Author-Date-->
-                            <div class="author-date">
-                                <div class="icon-left">
-                                    <div class="auther-user">
-                                        <i class="fa fa-user-circle-o"></i>
-                                    </div>
-                                    <div class="auther-name">
-                                        Pawan Bisht
-                                    </div>
+                    <div class="articles-content">
+                        <h6>Build Docke Image for Rust</h6>
+                        <!---Author-Date-->
+                        <div class="author-date">
+                            <div class="icon-left">
+                                <div class="auther-user">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </div>
+                                <div class="auther-name">
+                                    Pawan Bisht
                                 </div>
                             </div>
-                            <!---End of Author-Date-->
+                        </div>
+                        <!---End of Author-Date-->
 
-                            <!---Bttn and share-->
-                            <div class="articles-readmore">
-                                <div class="row">
-                                    <div class="read-more col-md-6">
-                                        <div class="article-bttn-share">
-                                            <a href="https://techhub.knoldus.com/dashboard/projects/rust/5da47399b6fd860f7c3c9cbd"  target="_blank"  class="btn btn-primary btn-lg read-bttn">Read More</a>
-                                        </div>
+                        <!---Bttn and share-->
+                        <div class="articles-readmore">
+                            <div class="row">
+                                <div class="read-more col-md-6">
+                                    <div class="article-bttn-share">
+                                        <a href="https://techhub.knoldus.com/dashboard/projects/rust/5da47399b6fd860f7c3c9cbd"
+                                           target="_blank" class="btn btn-primary btn-lg read-bttn">Read More</a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="share-articles">
-                                            <div class="share-articles-heading">
-                                                <h6>Share Article</h6>
-                                            </div>
-                                            <div class="share-articles-icon">
-                                                <ul>
-                                                    <li class="share-icon"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                    <li class="share-icon"><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                    <li class="share-icon"><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                </ul>
-                                            </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="share-articles">
+                                        <div class="share-articles-heading">
+                                            <h6>Share Article</h6>
+                                        </div>
+                                        <div class="share-articles-icon">
+                                            <ul>
+                                                <li class="share-icon"><a href=""><i class="fa fa-linkedin"
+                                                                                     aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                                                <li class="share-icon"><a href=""> <i class="fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- template/xlr8r content end-->
+                    </div>
+                    <!-- template/xlr8r content end-->
 
-    </div>
-    <!-- Templates/XLR8RS block-->
+                </div>
+                <!-- Templates/XLR8RS block-->
 
-    </div>
-    </div>
-    <div class="col-md-4" >
-  <div class="promote-block sticky">
-    <div class="info-heading">
-        Organizing an event or Meet-up?
-        <a href="https://bit.ly/2VrCFbn"  target="_blank"> Promote it with Rust times.</a>
-    </div>
-    <div class="archive-select-box">
-        <h2>Archive</h2>
-        <form>
-            <div class="form-group">
-              <!-- <label for="sel1">Select issue Number#:</label> -->
-              <select class="form-control"   id="dynamic_select">
-                  <option value="" selected>Select issue Number</option>
-                  <option value="index.html">ISSUE#24</option>
-                  <option value="issue_23.html">ISSUE#23</option>
-                  <option value="issue_22.html">ISSUE#22</option>
-                  <option value="issue_21.html">ISSUE#21</option>
-                  <option value="issue_20.html">ISSUE#20</option>
-                  <option value="issue_19.html">ISSUE#19</option>
-                  <option value="issue_18.html">ISSUE#18</option>
-                  <option value="issue_17.html">ISSUE#17</option>
-                  <option value="issue_16.html">ISSUE#16</option>
-                  <option value="issue_15.html">ISSUE#15</option>
-                  <option value="issue_14.html">ISSUE#14</option>
-                  <option value="issue_13.html">ISSUE#13</option>
-                  <option value="issue_12.html">ISSUE#12</option>
-                  <option value="issue_11.html">ISSUE#11</option>
-                  <option value="issue_10.html">ISSUE#10</option>
-                  <option value="issue_9.html">ISSUE#09</option>
-                  <option value="issue_8.html">ISSUE#08</option>
-                  <option value="issue_7.html">ISSUE#07</option>
-                  <option value="issue_6.html">ISSUE#06</option>
-                  <option value="issue_5.html">ISSUE#05</option>
-		              <option value="issue_4.html">ISSUE#04</option>
-		              <option value="issue_3.html">ISSUE#03</option>
-		              <option value="issue_2.html">ISSUE#02</option>
-                  <option value="issue_1.html">ISSUE#01</option>
-                </select>
             </div>
-              </form>
+        </div>
+        <div class="col-md-4">
+            <div class="promote-block sticky">
+                <div class="info-heading count-div">
+                    <span class="count">0</span>
+                    <h3>Subscribers</h3>
+                    <div class="rust-search rust-search-1">
+                        <button class="btn btn-success" type="submit"
+                                onclick="window.open('https://share.hsforms.com/18UU5CNKVT-iPaN8ZSmquMQ2u6gi','_blank')">
+                            Subscribe Now
+                        </button>
+                    </div>
+                </div>
+                <div class="info-heading">
+                    Organizing an event or Meet-up?
+                    <a href="https://bit.ly/2VrCFbn" target="_blank"> Promote it with Rust times.</a>
+                </div>
+                <div class="archive-select-box">
+                    <h2>Archive</h2>
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="sel1">Select issue Number#:</label> -->
+                            <select class="form-control" id="dynamic_select">
+                                <option value="" selected>Select issue Number</option>
+                                <option value="index.html">ISSUE#24</option>
+                                <option value="issue_23.html">ISSUE#23</option>
+                                <option value="issue_22.html">ISSUE#22</option>
+                                <option value="issue_21.html">ISSUE#21</option>
+                                <option value="issue_20.html">ISSUE#20</option>
+                                <option value="issue_19.html">ISSUE#19</option>
+                                <option value="issue_18.html">ISSUE#18</option>
+                                <option value="issue_17.html">ISSUE#17</option>
+                                <option value="issue_16.html">ISSUE#16</option>
+                                <option value="issue_15.html">ISSUE#15</option>
+                                <option value="issue_14.html">ISSUE#14</option>
+                                <option value="issue_13.html">ISSUE#13</option>
+                                <option value="issue_12.html">ISSUE#12</option>
+                                <option value="issue_11.html">ISSUE#11</option>
+                                <option value="issue_10.html">ISSUE#10</option>
+                                <option value="issue_9.html">ISSUE#09</option>
+                                <option value="issue_8.html">ISSUE#08</option>
+                                <option value="issue_7.html">ISSUE#07</option>
+                                <option value="issue_6.html">ISSUE#06</option>
+                                <option value="issue_5.html">ISSUE#05</option>
+                                <option value="issue_4.html">ISSUE#04</option>
+                                <option value="issue_3.html">ISSUE#03</option>
+                                <option value="issue_2.html">ISSUE#02</option>
+                                <option value="issue_1.html">ISSUE#01</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="suggestion-box">
+                    <h2>Wanted to contribute or share suggestions?</h2>
+                    <p>We love to share relevant articles, events, and jobs with our subscribers. Please contribute by
+                        submitting a PR. Also, let us know how we can improve further with your feedback and
+                        suggestions.</p>
+                    <a href="https://github.com/knoldus/rust-times/pulls" target="_blank" class="submit-btn">Submit</a>
+                </div>
+
+                <div class="suggestion-box">
+                    <h2>Stay Connected & Updated!</h2>
+                    <div class="share-articles-icon">
+                        <ul>
+                            <li class="share-icon"><a href="https://www.linkedin.com/showcase/14395364/admin/"
+                                                      target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="share-icon"><a href="https://twitter.com/RustTimes" target="_blank"> <i
+                                    class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-    <div class="suggestion-box">
-        <h2>Wanted to contribute or share suggestions?</h2>
-        <p>We love to share relevant articles, events, and jobs with our subscribers.  Please contribute by submitting a PR. Also, let us know how we can improve further with your feedback and suggestions.</p>
-        <a href="https://github.com/knoldus/rust-times/pulls"  target="_blank" class="submit-btn">Submit</a>
-    </div>
-
-    <div class="suggestion-box">
-        <h2>Stay Connected & Updated!</h2>
-        <div class="share-articles-icon">
-            <ul>
-              <li class="share-icon"><a href="https://www.linkedin.com/showcase/14395364/admin/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-
-              <li class="share-icon"><a href="https://twitter.com/RustTimes"  target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
-    </div>
-  </div>
-
-  </div>
-
-</div>
 </div>
 <footer>
 
-  <div class="footer-txt"> Compiled by  <a href="https://www.knoldus.com/"  target="_blanks" > <img src="images/knoldus-white-logo.png" alt="knoldus logo" class="img-responsive footer-logo" ></a> </div>
+    <div class="footer-txt"> Compiled by <a href="https://www.knoldus.com/" target="_blanks"> <img
+            src="images/knoldus-white-logo.png" alt="knoldus logo" class="img-responsive footer-logo"></a></div>
 </footer>
 <!-- Script-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/count.js"></script>
 
 <script>
-$('body').scrollspy({ target: '#navbar-rust',  offset: 60})
+    $('body').scrollspy({target: '#navbar-rust', offset: 60})
 
 
-//scrolling animation
+    //scrolling animation
 
-$(document).on('click', 'ul.rust-nav a', function (event) {
-    "use strict";
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000);
+    $(document).on('click', 'ul.rust-nav a', function (event) {
+        "use strict";
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
 
-});
+    });
 
 </script>
 <script>
-    $(function(){
-      // bind change event to select
-      $('#dynamic_select').on('change', function () {
-          var url = $(this).val(); // get selected value
-          if (url) { // require a URL
-              window.location = url; // redirect
-          }
-          return false;
-      });
+    $(function () {
+        // bind change event to select
+        $('#dynamic_select').on('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+        });
     });
 </script>
 
