@@ -31,6 +31,16 @@ a{ cursor: pointer; }
 	padding: 100px 0px;
 }
 
+.count-div {
+	text-align: center;
+}
+
+.count
+{
+	line-height: 50px;
+	font-size: 30px;
+}
+
 
 #home-content h3 {
 	font-size: 28px;
@@ -370,6 +380,10 @@ footer {background-color: #01070a; padding: 20px 0px;}
     margin-top: -6rem;
     visibility: hidden;
     content: "";
+}
+
+.rust-search-1 {
+	margin-left: 0 !important;
 }
 
 .rust-search {
