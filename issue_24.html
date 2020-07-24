@@ -1115,19 +1115,6 @@
         </div>
         <div class="col-md-4">
             <div class="promote-block sticky">
-                <div class="info-heading">
-                    <h3>Featured Books</h3>
-                    <div class="rust-search rust-search-1">
-                        <img src="images/blockchain-with-rust.png" style="width: 100%;"/>
-                        <a href="https://www.amazon.in/Blockchain-Rust-Developers-application-Hands-ebook/dp/B0873C5QV3"
-                           target="_blank" class="book-button">Buy Now</a>
-                    </div>
-                    <div class="rust-search rust-search-1">
-                        <img src="images/best-practices-rust.png" style="width: 100%;"/>
-                        <a href="https://www.amazon.com/Best-Practices-Rust-Programming-Language/dp/B089M434VZ"
-                           target="_blank" class="book-button">Buy Now</a>
-                    </div>
-                </div>
                 <div class="info-heading count-div">
                     <span class="count">0</span>
                     <h3>Subscribers</h3>
@@ -1148,38 +1135,7 @@
                         <div class="form-group">
                             <!-- <label for="sel1">Select issue Number#:</label> -->
                             <select class="form-control" id="dynamic_select">
-                                <option value="" selected>Select issue Number</option>
-                                <option value="index.html">ISSUE#31</option>
-                                <option value="issue_30.html">ISSUE#30</option>
-                                <option value="issue_29.html">ISSUE#29</option>
-                                <option value="issue_28.html">ISSUE#28</option>
-                                <option value="issue_27.html">ISSUE#27</option>
-                                <option value="issue_26.html">ISSUE#26</option>
-                                <option value="issue_25.html">ISSUE#25</option>
-                                <option value="issue_24.html">ISSUE#24</option>
-                                <option value="issue_23.html">ISSUE#23</option>
-                                <option value="issue_22.html">ISSUE#22</option>
-                                <option value="issue_21.html">ISSUE#21</option>
-                                <option value="issue_20.html">ISSUE#20</option>
-                                <option value="issue_19.html">ISSUE#19</option>
-                                <option value="issue_18.html">ISSUE#18</option>
-                                <option value="issue_17.html">ISSUE#17</option>
-                                <option value="issue_16.html">ISSUE#16</option>
-                                <option value="issue_15.html">ISSUE#15</option>
-                                <option value="issue_14.html">ISSUE#14</option>
-                                <option value="issue_13.html">ISSUE#13</option>
-                                <option value="issue_12.html">ISSUE#12</option>
-                                <option value="issue_11.html">ISSUE#11</option>
-                                <option value="issue_10.html">ISSUE#10</option>
-                                <option value="issue_9.html">ISSUE#09</option>
-                                <option value="issue_8.html">ISSUE#08</option>
-                                <option value="issue_7.html">ISSUE#07</option>
-                                <option value="issue_6.html">ISSUE#06</option>
-                                <option value="issue_5.html">ISSUE#05</option>
-                                <option value="issue_4.html">ISSUE#04</option>
-                                <option value="issue_3.html">ISSUE#03</option>
-                                <option value="issue_2.html">ISSUE#02</option>
-                                <option value="issue_1.html">ISSUE#01</option>
+
                             </select>
                         </div>
                     </form>
@@ -1191,7 +1147,19 @@
                         suggestions.</p>
                     <a href="https://github.com/knoldus/rust-times/pulls" target="_blank" class="submit-btn">Submit</a>
                 </div>
-
+                <div class="info-heading">
+                    <h3>Featured Books</h3>
+                    <div class="rust-search rust-search-1">
+                        <img src="images/blockchain-with-rust.png" style="width: 100%;"/>
+                        <a href="https://www.amazon.com/dp/B0873C5QV3"
+                           target="_blank" class="book-button">Buy Now</a>
+                    </div>
+                    <div class="rust-search rust-search-1">
+                        <img src="images/best-practices-rust.png" style="width: 100%;"/>
+                        <a href="https://www.amazon.com/Best-Practices-Rust-Programming-Language/dp/B089M434VZ"
+                           target="_blank" class="book-button">Buy Now</a>
+                    </div>
+                </div>
                 <div class="suggestion-box">
                     <h2>Stay Connected & Updated!</h2>
                     <div class="share-articles-icon">
@@ -1241,6 +1209,7 @@
 </script>
 <script>
     $(function () {
+        buildIssueOptions();
         // bind change event to select
         $('#dynamic_select').on('change', function () {
             var url = $(this).val(); // get selected value
