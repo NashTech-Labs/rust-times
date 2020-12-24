@@ -3,10 +3,13 @@ const issues = [
         "text": "Select Issue Number",
         "link": "#"
     },
-
+    {
+        "text": "Issue#43",
+        "link": "index.html"
+    },
     {
         "text": "Issue#42",
-        "link": "index.html"
+        "link": "issue_42.html"
     },
     {
         "text": "Issue#41",
