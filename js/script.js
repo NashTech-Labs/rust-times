@@ -4,8 +4,12 @@ const issues = [
         "link": "#"
     },
     {
-        "text": "Issue#65",
+        "text": "Issue#66",
         "link": "index.html"
+    },
+    {
+        "text": "Issue#65",
+        "link": "issue_65.html"
     },
     {
         "text": "Issue#64",
